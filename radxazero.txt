@@ -1,0 +1,174 @@
+����_�G12A:BL:0253b8:61aa2d;FEAT:E0F83180:2000;POC:F;RCY:0;EMMC:0;READ:0;CHK:1F;READ:0;CHK:1F;READ:0;CHK:1F;SD?:0;SD:0;READ:0;0.0
+                                                                                                                                 bl2_stage_init 0x01
+bl2_stage_init 0x81
+hw id: 0x0001 - pwm id 0x00
+bl2_stage_init 0xc0
+bl2_stage_init 0x02
+
+no sdio debug board detected 
+L0:00000000
+L1:00000703
+L2:00008067
+L3:04000000
+S1:00000000
+B2:00002000
+B1:e0f83180
+
+TE: 351501
+
+BL2 Built : 15:21:48, Aug 28 2019. g12a g1bf2b53 - luan.yuan@droid15-sz
+
+Board ID = 2
+Set cpu clk to 24M
+Set clk81 to 24M
+CPU clk: 1200 MHz
+Set clk81 to 166.6M
+DDR driver_vesion: LPDDR4_PHY_V_0_1_18 build time: Aug 28 2019 15:21:45
+board id: 2
+Load FIP HDR from SD, src: 0x00010200, des: 0xfffd0000, size: 0x00004000, part: 0
+fw parse done
+Load ddrfw from SD, src: 0x00060200, des: 0xfffd0000, size: 0x0000c000, part: 0
+Load ddrfw from SD, src: 0x00038200, des: 0xfffd0000, size: 0x00004000, part: 0
+PIEI prepare done
+fastboot data load
+fastboot data verify
+verify result: 266
+Cfg max: 2, cur: 1. Board id: 255. Force loop cfg
+LPDDR4 probe
+ddr clk to 792MHz
+Load ddrfw from SD, src: 0x0003c200, des: 0xfffd0000, size: 0x0000c000, part: 0
+
+dmc_version 0000
+Check phy result
+INFO : End of CA training
+INFO : End of initialization
+INFO : Training has run successfully!
+Check phy result
+INFO : End of initialization
+INFO : End of read enable training
+INFO : End of fine write leveling
+INFO : End of Write leveling coarse delay
+INFO : Training has run successfully!
+Check phy result
+INFO : End of initialization
+INFO : End of read dq deskew training
+INFO : End of MPR read delay center optimization
+INFO : End of write delay center optimization
+INFO : End of read delay center optimization
+INFO : End of max read latency training
+INFO : Training has run successfully!
+1D training succeed
+Load ddrfw from SD, src: 0x00048200, des: 0xfffd0000, size: 0x0000c000, part: 0
+Check phy result
+INFO : End of initialization
+INFO : End of 2D read delay Voltage center optimization
+INFO : End of 2D read delay Voltage center optimization
+INFO : End of 2D write delay Voltage center optimization
+INFO : End of 2D write delay Voltage center optimization
+INFO : Training has run successfully!
+
+channel==0
+RxClkDly_Margin_A0==236 ps 12
+TxDqDly_Margin_A0==236 ps 12
+RxClkDly_Margin_A1==236 ps 12
+TxDqDly_Margin_A1==236 ps 12
+TrainedVREFDQ_A0==74
+TrainedVREFDQ_A1==74
+VrefDac_Margin_A0==24
+DeviceVref_Margin_A0==40
+VrefDac_Margin_A1==24
+DeviceVref_Margin_A1==40
+
+
+channel==1
+RxClkDly_Margin_A0==236 ps 12
+TxDqDly_Margin_A0==236 ps 12
+RxClkDly_Margin_A1==256 ps 13
+TxDqDly_Margin_A1==216 ps 11
+TrainedVREFDQ_A0==74
+TrainedVREFDQ_A1==74
+VrefDac_Margin_A0==24
+DeviceVref_Margin_A0==40
+VrefDac_Margin_A1==25
+DeviceVref_Margin_A1==40
+
+ dwc_ddrphy_apb_wr((0<<20)|(2<<16)|(0<<12)|(0xb0):0004 
+
+soc_vref_reg_value 0x 00000013 00000015 00000014 00000015 00000015 00000013 00000013 00000014 00000017 00000016 00000014 00000016 00000016 00000014 00000016 00000016 00000014 00000016 00000014 00000016 00000016 00000015 00000015 00000014 00000015 00000014 00000015 00000014 00000015 00000014 00000013 00000015 dram_vref_reg_value 0x 00000062
+2D training succeed
+aml_ddr_fw_vesion: LPDDR4_PHY_V_0_1_18 build time: Aug 28 2019 13:53:31
+auto size-- 65535DDR cs0 size: 2048MB
+DDR cs1 size: 2048MB
+DMC_DDR_CTRL: 00e00024DDR size: 3928MB
+cs0 DataBus test pass
+cs1 DataBus test pass
+cs0 AddrBus test pass
+cs1 AddrBus test pass
+
+100bdlr_step_size ps== 501
+result report
+boot times 0Enable ddr reg access
+Load FIP HDR from SD, src: 0x00010200, des: 0x01700000, size: 0x00004000, part: 0
+Load BL3X from SD, src: 0x0006c200, des: 0x0175c000, size: 0x000a8000, part: 0
+bl2z: ptr: 05129330, size: 00001e40
+0.0;M3 CHK:0;cm4_sp_mode 0
+MVN_1=0x00000000
+MVN_2=0x00000000
+[Image: g12a_v1.1.3390-6ac5299 2019-09-26 14:09:46 luan.yuan@droid15-sz]
+OPS=0x30
+ring efuse init
+28 0b 30 00 01 1d 01 00 00 08 38 38 34 55 30 50 
+[0.017149 Inits done]
+secure task start!
+high task start!
+low task start!
+run into bl31
+NOTICE:  BL31: v1.3(release):4fc40b1
+NOTICE:  BL31: Built : 15:57:33, May 22 2019
+NOTICE:  BL31: G12A normal boot!
+NOTICE:  BL31: BL33 decompress pass
+ERROR:   Error initializing runtime service opteed_fast
+
+<debug_uart>
+
+
+U-Boot 2023.01 (Mar 16 2023 - 13:48:01 -0400) radxa-zero
+
+Model: Radxa Zero
+SoC:   Amlogic Meson G12A (S905Y2) Revision 28:b (30:2)
+DRAM:  1 GiB (effective 3.8 GiB)
+Core:  382 devices, 23 uclasses, devicetree: separate
+MMC:   sd@ffe03000: 0, sd@ffe05000: 1, mmc@ffe07000: 2
+Loading Environment from nowhere... OK
+In:    serial
+Out:   serial
+Err:   serial
+Net:   No ethernet found.
+Hit any key to stop autoboot:  0 
+Card did not respond to voltage select! : -110
+switch to partitions #0, OK
+mmc1 is current device
+Scanning mmc 1:1...
+Found /boot/extlinux/extlinux.conf
+Retrieving file: /boot/extlinux/extlinux.conf
+1:      default
+Retrieving file: /boot/extlinux/../uInitrd
+Retrieving file: /boot/extlinux/../Image
+append: earlyprintk console=tty1 console=ttyAML0,115200n8 console=both rw root=PARTUUID=efb07137-01 loglevel=5 verbose rootwait rootfstype=ext4 fsck.repair=yes loglevel=1 net.ifnames=0 no_console_suspend init=/sbin/init
+Retrieving file: /boot/extlinux/../amlogic/meson-g12a-radxa-zero.dtb
+Moving Image from 0x8080000 to 0x8200000, end=a010000
+## Loading init Ramdisk from Legacy Image at 13000000 ...
+   Image Name:   initramfs-6.1.19
+   Image Type:   ARM Linux RAMDisk Image (gzip compressed)
+   Data Size:    7003002 Bytes = 6.7 MiB
+   Load Address: 00000000
+   Entry Point:  00000000
+   Verifying Checksum ... OK
+## Flattened Device Tree blob at 08008000
+   Booting using the fdt blob at 0x8008000
+Working FDT set to 8008000
+   Loading Ramdisk to 3f952000, end 3ffffb7a ... OK
+   Loading Device Tree to 000000003f93c000, end 000000003f95113c ... OK
+Working FDT set to 3f93c000
+
+Starting kernel ...
